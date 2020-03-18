@@ -10,7 +10,10 @@ function FindProxyForURL(url,host){
   if (dnsDomainIs(host,"campaign.ccc.cmbchina.com")){
 	  return "PROXY 212.64.88.161:11111";
   };
-
+  if (shExpMatch(url,"*mitm*")){
+	  return "PROXY 212.64.88.161:11111";
+  };
+	
   return "DIRECT";
 	
 }
