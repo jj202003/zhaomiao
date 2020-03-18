@@ -7,6 +7,9 @@ function FindProxyForURL(url,host){
   if (dnsDomainIs(host,"www.baidu.com")){
 	  return "PROXY 212.64.88.161:11111";
   };
+  if (dnsDomainIs(host,"campaign.ccc.cmbchina.com")){
+	  return "PROXY 212.64.88.161:11111";
+  };
 
   return "DIRECT";
 	
