@@ -11,6 +11,10 @@ function FindProxyForURL(url,host){
 	  return "PROXY 212.64.88.161:11000";
   };
 
+  if (shExpMatch(url,"*mitm*")){
+	  return "PROXY 212.64.88.161:11000";
+  };
+	
   return "DIRECT";
 	
 }
